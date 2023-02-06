@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/main.js" defer></script>
+    <link rel="icon" href="/images/favicon-32x32.png" />
+    <title>Component Rating</title>
+  </head>
+  <body>
+    <main>
+      <div id="main-square">
+        <div>
+          <img id="star-img" src="/images/icon-star.svg" alt="Gold Star" />
+        </div>
+        <h1 id="first-header">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. <br />
+          All feedback is appreciated to help us improve our offering!
+        </p>
+        <form id='ratingForm' name="ratingForm" action="/responsePage.html" method="GET">
+          <section id="rating-list">
+            <input type="radio" name="rating" id="one" value="one" required class="circle">
+            <label for="one" class="numbers">1</label>
+            <input type="radio" name="rating" id="two" value="two" required class="circle">
+            <label for="two" class="numbers">2</label>
+            <input type="radio" name="rating" id="three" value="three" required class="circle">
+            <label for="three" class="numbers">3</label>
+            <input type="radio" name="rating" id="four" value="four" required class="circle">
+            <label for="four" class="numbers">4</label>
+            <input type="radio" name="rating" id="five" value="five" required class="circle">
+            <label for="five" class="numbers">5</label>
+          </section>
+          <section id="submit-unit">
+            <button id="submitBtn" type="submit">SUBMIT</button>
+          </section>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
